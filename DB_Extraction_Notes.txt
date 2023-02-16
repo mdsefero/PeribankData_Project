@@ -1,0 +1,31 @@
+Log of Peribank Export
+
+Complete database exported 18 August 2020. 
+Had to break into files because MedsciNet can not handle large data extraction likely due to exponential nature of data creation with quiries from SQL tables. 
+
+Exported individyually by Section. All sections contain Subject ID and Pregnancy ID
+
+File Name   		Starts at section
+PeribankDB_1.txt	maternal identification
+PeribankDB_2.txt	prior pregnancy
+PeribankDB_3.txt	prenatal data
+PeribankDB_4.txt	family history - maternal
+PeribankDB_5.txt	paternal information
+PeribankDB_6.txt	antepartum course
+PeribankDB_7.txt	intrapartum course
+PeribankDB_8.txt	delivery
+PeribankDB_9.txt	postpartum course
+PeribankDB_10.txt	maternal blood - serum
+PeribankDB_11.txt	cord - serum
+PeribankDB_12.txt	paternal blood - plasma
+PeribankDB_13.txt	placenta - tissue	
+
+
+Reassembled database was done to combine all fields, collapse redundant pregnancy IDs with varying data as CSV separated.
+Database 'PBDBfinal.txt' reconstructed from component files with use of 'DB_recreate.py'. It contains single entries indexed by pregnancy for 47,065 pregnancies. 
+
+
+
+
+
+
